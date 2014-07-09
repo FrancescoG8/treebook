@@ -20,4 +20,16 @@ class User < ActiveRecord::Base
   def full_name
   	first_name + " " + last_name
   end
+
+#  def gravatar_url
+#    stripped_email = email.strip
+#    downcased_email = stripped_email.downcased
+#    hash = Digest::MD5.hexdigest(downcased_email)
+#  
+#    "http://gravatar.com/avatar/#{hash}"
+#  end
+
+#  <div class="span1"> Place in index.html.erb
+#    <%= image_tag status.user.gravatar_url %>
+#  </div>
 end

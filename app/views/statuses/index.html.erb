@@ -7,15 +7,19 @@
 <% @statuses.each do |status| %>
 <!-- For each status, return the name -->
 <div class="status">
-  <strong><%= status.user.full_name %></strong>
-  <p><%= status.content %></p>
-  <div class="meta">
-    <%= link_to status.created_at, status %> <!-- provides time stamp status created and links to url for individual status -->
-    <span class="admin">
-      | <%= link_to "Edit", edit_status_path(status) %> | <!-- admin class allows us to choose when to show edit button and _path is the path to edit individual status -->
-      <!-- '|' shows up on screen and helps to visually separate buttons -->
-      <%= link_to "Delete", status, method: :delete, data: { confirm: "Are you sure you want to delete this status?"} %>
-    </span>
+  <div class="row">
+    <div class="span7">
+      <strong><%= status.user.full_name %></strong>
+      <p><%= status.content %></p>
+      <div class="meta">
+        <%= link_to status.created_at, status %> <!-- provides time stamp status created and links to url for individual status -->
+        <span class="admin">
+          | <%= link_to "Edit", edit_status_path(status) %> | <!-- admin class allows us to choose when to show edit button and _path is the path to edit individual status -->
+          <!-- '|' shows up on screen and helps to visually separate buttons -->
+          <%= link_to "Delete", status, method: :delete, data: { confirm: "Are you sure you want to delete this status?"} %>
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 <% end %>
