@@ -7,3 +7,7 @@ one:
 two:
   content: MyString
   user: Francesco
+
+ three:
+  content: "Hi I'm Jim"
+  user: Jim

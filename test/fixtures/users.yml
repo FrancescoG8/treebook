@@ -3,3 +3,9 @@ Francesco:
 	last_name: "Gordon"
 	email: "pfranchise@gmail.com"
 	profile_name: "Franchise"
+
+Jim:
+	first_name: "Jim"
+	last_name: "Harrison"
+	email: "chise@gmail.com"
+	profile_name: "Chise"
